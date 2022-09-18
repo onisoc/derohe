@@ -97,7 +97,7 @@ type CHAIN_CONFIG struct {
 
 var Mainnet = CHAIN_CONFIG{Name: "mainnet",
 	Network_ID:              uuid.FromBytesOrNil([]byte{0x59, 0xd7, 0xf7, 0xe9, 0xdd, 0x48, 0xd5, 0xfd, 0x13, 0x0a, 0xf6, 0xe0, 0x9a, 0x44, 0x41, 0x0}),
-	GETWORK_Default_Port:    10100,
+	GETWORK_Default_Port:    10104,
 	RPC_Default_Port:        10102,
 	Wallet_RPC_Default_Port: 10103,
 	Dev_Address:             "dero1qykyta6ntpd27nl0yq4xtzaf4ls6p5e9pqu0k2x4x3pqq5xavjsdxqgny8270",
@@ -117,7 +117,7 @@ var Mainnet = CHAIN_CONFIG{Name: "mainnet",
 
 var Testnet = CHAIN_CONFIG{Name: "testnet", // testnet will always have last 3 bytes 0
 	Network_ID:              uuid.FromBytesOrNil([]byte{0x59, 0xd7, 0xf7, 0xe9, 0xdd, 0x48, 0xd5, 0xfd, 0x13, 0x0a, 0xf6, 0xe0, 0x87, 0x00, 0x00, 0x00}),
-	GETWORK_Default_Port:    10100,
+	GETWORK_Default_Port:    10104,
 	RPC_Default_Port:        40402,
 	Wallet_RPC_Default_Port: 40403,
 
