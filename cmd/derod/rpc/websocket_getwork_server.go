@@ -343,7 +343,7 @@ func Getwork_server() {
 		AddrsTLS:                []string{default_address},
 		TLSConfig:               tlsConfig,
 		Handler:                 mux,
-		MaxLoad:                 10 * 1024,
+		MaxLoad:                 100 * 1024,
 		MaxWriteBufferSize:      32 * 1024,
 		ReleaseWebsocketPayload: true,
 		KeepaliveTime:           240 * time.Hour, // we expects all miners to find a block every 10 days,
